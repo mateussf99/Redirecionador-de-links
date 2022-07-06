@@ -1,0 +1,104 @@
+/* seletor universalll */
+* {
+  margin: 0; /*retirando as margins de geral*/
+  padding: 0; /*retirando o padding(preenchimento interno) de geral*/
+  box-sizing: border-box; /*medida da caixa pela borda*/
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #a0d9d9;
+  font-family: 'Roboto', sans-serif;
+}
+/* .container seletor da class do meu html */
+.container {
+  text-align: center;
+  width: 300px;
+  margin: 60px auto; /*valor 1 :em cima e em baixo valor 2: laterais*/
+  padding: 0px 40px;
+}
+div {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2); /*efeito de sombra*/
+}
+
+img {
+  /* a imagem sempre vai segir a largura da caixa */
+  width: 100%;
+}
+img.avatar {
+  margin-top: 3px;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  border: solid 4px;
+  padding: 3.7px;
+  border-color: #008f8c;
+}
+
+h1 {
+  font-size: 28px;
+  color: hsla(230, 100%, 9%);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.info {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsla(230, 100%, 9%, 0.8);
+}
+
+ul {
+  list-style: none; /*tirando o stilo da lista*/
+  margin: 48px 0;
+}
+
+ul li a {
+  height: 53px;
+  display: flex; /*liberando o display*/
+  align-items: center;
+  justify-content: center; /*coloca o conteudo ao centro*/
+  background: #008f8c;
+  color: white;
+  text-transform: uppercase; /*tudo em caixa alta*/
+  font-size: 14px;
+  margin-bottom: 16px; /*margim abaixo entre os botões*/
+  border-radius: 6px;
+  transition: background 400ms; /*tempo de troca de cor*/
+}
+.insta {
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+}
+.twitter {
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+}
+.git {
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+}
+.linkedin {
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+}
+/* pseudo-class  */
+ul li a:hover {
+  /*passar o mouse trocar de cor*/
+  background: #023535;
+}
+footer {
+  font-weight: 500;
+  font-size: 12px;
+  color: hsla(230, 100%, 9%, 0.6); /*o 0.6 e a opacidade*/
+}
